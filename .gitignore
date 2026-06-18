@@ -1,3 +1,7 @@
 documents/
 *.sql
 .gitattributes
+.vscode/
+log/
+*.log
+
