@@ -1,0 +1,73 @@
+main {
+	position: relative;
+	z-index: 0;
+	width: calc(100% - 80px);
+	height: 100vh;
+	margin-left: 80px;
+    padding: 70px 50px;
+    box-sizing: border-box;
+    background-position: center;
+    background-size: cover;
+}
+
+.fade {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffc9;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.course-wrapper h1 {
+    font-size: 42px;
+    width: 65%;
+    color: #2fabd4;
+}
+
+.course-wrapper p:first-of-type {
+    font-size: 30px;
+    width: 70%;
+    margin-top: 20px;
+}
+
+.course-wrapper p:last-of-type {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.course-wrapper a {
+    display: inline-block;
+    padding: 16px 40px;
+    background: #1ac6ff;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 10px;
+    letter-spacing: 0.3px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 25px rgba(74, 108, 247, 0.3);
+    position: relative;
+    overflow: hidden;
+    margin-top: 70px;
+}
+
+.course-wrapper h2 {
+    display: inline-block;
+    padding: 16px 40px;
+    background: #ff3573;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 10px;
+    letter-spacing: 0.3px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 25px rgba(74, 108, 247, 0.3);
+    position: relative;
+    overflow: hidden;
+    margin-top: 70px;
+}

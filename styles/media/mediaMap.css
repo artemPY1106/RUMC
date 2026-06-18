@@ -1,0 +1,87 @@
+@media (max-width: 1000px) {
+    .tittle-map {
+        font-size: 50px;
+        padding-left: 30px;
+    }
+
+    .legend-wrapper {
+        justify-content: space-between;
+        padding: 0 25px;
+        box-sizing: border-box;
+    }
+
+    .map {
+        background-size: 100%;
+    }
+
+    .map-kuzb {
+        background-size: 100%;
+    }
+
+    .legend-wrapper div {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 860px) {
+    .on-map-wrapper {
+        width: 100%;
+        margin: 0;
+    }
+
+    .tittle-map {
+        font-size: 8vw;
+    }
+
+    .legend-wrapper div {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 660px) {
+
+    .on-map-wrapper {
+        height: 60vh;
+    }
+
+    .tittle-map {
+        padding-top: 0;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .legend-wrapper {
+        display: none;
+    }
+
+    .file-zakrep-wrap {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 80%;
+        width: 80%;
+        border-radius: 10px;
+        padding: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .file-zakrep-wrap a {
+        border-radius: 10px;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 50px;
+    }
+
+    .file-zakrep-wrap a i  {
+        font-size: 25vw;
+    }
+
+    .file-zakrep-wrap a p {
+        font-size: 6vw;
+        text-align: center;
+        margin: 0;
+    }
+}
