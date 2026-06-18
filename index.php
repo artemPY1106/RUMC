@@ -18,6 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="styles/education.css">
 	<link rel="stylesheet" type="text/css" href="styles/careerGuidance.css">
 	<link rel="stylesheet" type="text/css" href="styles/footer.css">
+	<link rel="stylesheet" type="text/css" href="styles/media/mediaHomepage.css">
 	<link rel="stylesheet" type="text/css" href="styles/media/mediaNav.css">
 	<link rel="stylesheet" type="text/css" href="styles/media/mediaFirstWrapper.css">
 	<link rel="stylesheet" type="text/css" href="styles/media/mediaMap.css">

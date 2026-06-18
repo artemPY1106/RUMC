@@ -1,144 +1,144 @@
 @media (max-width: 1080px) {
-    .list-courses {
-        row-gap: 24px;
-    }
+  .list-courses {
+    row-gap: 24px;
+  }
 }
 
 @media (max-width: 860px) {
-    .courses-wrapper {
-        width: 100%;
-        margin: 0;
-        height: auto;
-    }
+  .courses-wrapper {
+    width: 100%;
+    margin: 0;
+    height: auto;
+  }
 
-    .courses-wrapper .adpt-header {
-        font-size: 8vw;
-        margin-bottom: 50px;
-    }
+  .courses-wrapper .adpt-header {
+    font-size: 8vw;
+    margin-bottom: 50px;
+  }
 
-    .tt-center {
-        margin: 0;
-    }
+  .tt-center {
+    margin: 0;
+  }
 
-    .info-courses-wrapper {
-        height: auto;
-    }
+  .info-courses-wrapper {
+    height: auto;
+  }
 
-    .list-courses {
-        margin: 0;
-    }
+  .list-courses {
+    margin: 0;
+  }
 }
 
 /* Медиазапросы для адаптации списка курсов */
 
 /* Планшеты (768px - 1024px) */
 @media screen and (max-width: 1024px) {
-    .list-courses {
-        gap: 20px;
-    }
+  .list-courses {
+    gap: 20px;
+  }
 
-    .list-courses li {
-        padding: 15px 35px;
-        font-size: 18px;
-    }
+  .list-courses li {
+    padding: 15px 35px;
+    font-size: 18px;
+  }
 
-    .list-courses li div {
-        width: 220px;
-        height: 28px;
-        font-size: 14px;
-        top: -14px;
-        right: -14px;
-    }
+  .list-courses li div {
+    width: 220px;
+    height: 28px;
+    font-size: 14px;
+    top: -14px;
+    right: -14px;
+  }
 
-    .about-courses {
-        font-size: 20px;
-        width: 60%;
-        height: 60px;
-    }
+  .about-courses {
+    font-size: 20px;
+    width: 60%;
+    height: 60px;
+  }
 }
 
 /* Мобильные устройства (480px - 768px) */
 @media screen and (max-width: 768px) {
-    .list-courses {
-        width: 100%;
-        gap: 15px;
-    }
+  .list-courses {
+    width: 100%;
+    gap: 15px;
+  }
 
-    .list-courses li {
-        width: 100%;
-        padding: 12px 20px;
-        font-size: 15px;
-        box-sizing: border-box;
-    }
+  .list-courses li {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 15px;
+    box-sizing: border-box;
+  }
 
-    .list-courses li div {
-        position: static;
-        display: inline-block;
-        width: auto;
-        height: auto;
-        padding: 4px 12px;
-        font-size: 11px;
-        margin-left: 10px;
-        border-radius: 20px;
-        top: auto;
-        right: auto;
-    }
+  .list-courses li div {
+    position: static;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 4px 12px;
+    font-size: 11px;
+    margin-left: 10px;
+    border-radius: 20px;
+    top: auto;
+    right: auto;
+  }
 
-    .list-courses li a {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-    }
+  .list-courses li a {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
 
-    .about-courses {
-        font-size: 16px;
-        width: 85%;
-        height: 50px;
-        margin-top: 15px;
-    }
+  .about-courses {
+    font-size: 16px;
+    width: 85%;
+    height: 50px;
+    margin-top: 15px;
+  }
 }
 
 /* Маленькие мобильные (320px - 480px) */
 @media screen and (max-width: 480px) {
-    .list-courses {
-        gap: 12px;
-    }
+  .list-courses {
+    gap: 12px;
+  }
 
-    .list-courses li {
-        padding: 10px 15px;
-        font-size: 13px;
-    }
+  .list-courses li {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
 
-    .list-courses li div {
-        font-size: 10px;
-        padding: 3px 10px;
-        margin-left: 8px;
-    }
+  .list-courses li div {
+    font-size: 10px;
+    padding: 3px 10px;
+    margin-left: 8px;
+  }
 
-    .about-courses {
-        font-size: 14px;
-        width: 95%;
-        height: 45px;
-    }
+  .about-courses {
+    font-size: 14px;
+    width: 95%;
+    height: 45px;
+  }
 }
 
 /* Очень маленькие телефоны (до 360px) */
 @media screen and (max-width: 360px) {
-    .list-courses li {
-        padding: 10px 12px;
-        font-size: 12px;
-    }
+  .list-courses li {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
 
-    .list-courses li div {
-        font-size: 9px;
-        padding: 2px 8px;
-        margin-left: 5px;
-    }
+  .list-courses li div {
+    font-size: 9px;
+    padding: 2px 8px;
+    margin-left: 5px;
+  }
 
-    .about-courses {
-        font-size: 12px;
-        height: 42px;
-    }
+  .about-courses {
+    font-size: 12px;
+    height: 42px;
+  }
 }
