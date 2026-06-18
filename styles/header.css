@@ -1,0 +1,109 @@
+header nav {
+	position: fixed;
+	z-index: 9999;
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	height: 100vh;
+	left: -320px;
+	background: linear-gradient(135deg, #ff3573 0%, #1ac6ff 100%);
+	background-size: 600% 600%;
+	animation: slidedown 1s ease, gradien 10s ease infinite;
+}
+
+@keyframes slidedown {
+	from {
+		transform: translatex(-600px);
+		opacity: 0%;
+	}
+
+	to {
+		opacity: 100%;
+		transform: translatex(0px);
+	}
+}
+
+.fa-arrow-left {
+	display: none;
+}
+
+header nav ul {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+
+header nav ul li:first-child {
+	color: #fff;
+	font-size: 35px;
+}
+
+header nav ul li {
+	position: relative;
+	height: 90%;
+}
+
+
+header nav ul li a {
+	position: relative;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 400;
+	cursor: url('../images/cursor-pointer.cur'), pointer;
+}
+
+header nav ul li p {
+	position: absolute;
+	width: 93%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	font-size: 24px;
+	padding-left: 25px;
+	left: -500px;
+	background-color: #fff;
+	color: #2fabd4;
+	transition: 0.3s;
+	cursor: url('../images/cursor-pointer.cur'), pointer;
+}
+
+header nav ul li a p:hover {
+	background-color: #dadada;
+	width: 100%;
+	border-right: 2px solid #000;
+}
+
+.for-ico {
+	position: absolute;
+	right: 0;
+	width: 80px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header nav ul li i {
+	cursor: url('../images/cursor-pointer.cur'), pointer;
+}
+
+header nav ul li a i {
+	font-size: 36px;
+	cursor: url('../images/cursor-pointer.cur'), pointer;
+}
+
+.fa-solid {
+	cursor: url('../images/cursor-pointer.cur'), pointer;
+}
+
+.fa-regular {
+	cursor: url('../images/cursor-pointer.cur'), pointer;
+}

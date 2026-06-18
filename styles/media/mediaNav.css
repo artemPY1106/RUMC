@@ -1,0 +1,67 @@
+@media (max-width: 860px) {
+    header {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        z-index: 99999;
+    }
+
+    header nav {
+        position: relative;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+    
+    .fa-arrow-left {
+        display: none;
+    }
+    
+    header nav ul {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+    }
+    
+    header nav ul li:first-child {
+        display: none;
+    }
+    
+    header nav ul li {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+    
+    
+    header nav ul li p {
+       display: none;
+    }
+    
+    header nav ul li a p:hover {
+        display: none;
+    }
+    
+    .for-ico {
+        position: absolute;
+        right: 0;
+        width: 80px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header nav ul li i {
+        cursor: url('../images/cursor-pointer.cur'), pointer;
+    }
+    
+    header nav ul li a i {
+        font-size: 36px;
+        cursor: url('../images/cursor-pointer.cur'), pointer;
+    }
+}
