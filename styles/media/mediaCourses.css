@@ -18,7 +18,7 @@
 
   .wrapper-courses .first-word {
     font-size: 5vw;
-
+    margin-left: 25%;
     text-align: center;
   }
 
@@ -120,6 +120,9 @@
     margin-top: 15px;
   }
 
+  .min-info h1 {
+    font-size: 4vw;
+  }
 }
 
 /* Маленькие мобильные (320px - 480px) */
@@ -143,6 +146,14 @@
     font-size: 14px;
     width: 95%;
     height: 45px;
+  }
+
+  .bottom-info {
+    column-gap: 0vw;
+  }
+
+  .bottom-info p:last-child {
+    font-size: 4vw;
   }
 }
 
