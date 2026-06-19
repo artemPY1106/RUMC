@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -11,6 +12,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha512-HaoDYc3PGduguBWOSToNc0AWGHBi2Y432Ssp3wNIdlOzrunCtB2qq6FrhtPbo+PlbvRbyi86dr5VQx61eg/daQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<link rel="stylesheet" type="text/css" href="styles/origin.css">
 	<link rel="stylesheet" type="text/css" href="styles/header.css">
+	<link rel="stylesheet" type="text/css" href="styles/media/mediaHomepage.css">
 	<link rel="stylesheet" type="text/css" href="styles/homepage.css">
 	<link rel="stylesheet" type="text/css" href="styles/fileviewer.css">
 	<link rel="stylesheet" type="text/css" href="styles/events.css">
@@ -18,7 +20,6 @@
 	<link rel="stylesheet" type="text/css" href="styles/education.css">
 	<link rel="stylesheet" type="text/css" href="styles/careerGuidance.css">
 	<link rel="stylesheet" type="text/css" href="styles/footer.css">
-	<link rel="stylesheet" type="text/css" href="styles/media/mediaHomepage.css">
 	<link rel="stylesheet" type="text/css" href="styles/media/mediaNav.css">
 	<link rel="stylesheet" type="text/css" href="styles/media/mediaFirstWrapper.css">
 	<link rel="stylesheet" type="text/css" href="styles/media/mediaMap.css">
@@ -291,7 +292,7 @@
 							<?php
 								require_once('php/connectdb.php');
 
-								$allKursi = $conn->query('SELECT `idkursi`, `name`, `type` FROM `kursi` ORDER BY `idkursi` DESC');
+								$allKursi = $conn->query('SELECT `idkursi`, `name`, `type` FROM `kursi` ORDER BY `idkursi` DESC LIMIT 3');
 								foreach ($allKursi as $row) {
 									echo '
 										<li>
@@ -322,32 +323,7 @@
 		</div>
 	</main>
 	<footer>
-		<div>
-			<div>
-				<p>Ресурсным учебно-методическим центром инклюзивного образования  ГПОУ «Профессиональный колледж г. Новокузнецка» имени Кучерявенко Тамары Александровны организована работа постоянно действующей «горячей линии» по вопросам получения профессионального образования и профессионального обучения лиц с инвалидностью и ОВЗ.</p>
-			</div>
-			<div>
-				<p>Номер телефона горячей линии: +7(950)579 - 74 - 86</p>
-			</div>
-			<div>
-				<p>Консультирование осуществляют специалисты РУМЦ ГПОУ «Профессиональный колледж г. Новокузнецка» имени Кучерявенко Тамары Александровны</p>
-			</div>
-			<div>
-				<p>Ответственный за работу «горячей линии»:  Барышева Анжелика Виикторовна, руководитель РУМЦ</p>
-				<p>e-mail: rumc@pkgn.ru</p>
-			</div>
-			<div>
-				<p>ВАШ ПЕРСОНАЛЬНЫЙ КОНСУЛЬТАНТ</p>
-				<p>Готов оказывать содействие на всем пути выбора образовательной организации, направления подготовки</p>
-			</div>
-			<div>
-				<p><span>ВОЗМОЖНОСТИ ДЛЯ АБИТУРИЕНТОВ И РОДИТЕЛЕЙ</span><br>
-				- Получение индивидуальных консультаций<br>
-				- Консультация в подготовке полного пакета документов для зачисления<br>
-				<span>КАК ПОЛУЧИТЬ ПЕРСОНАЛЬНОГО КОНСУЛЬТАНТА?</span><br>
-				Оставьте Ваши контактные данные в выплывающей плашке, расположенной слева экрана и с Вами свяжется специалист.</p>
-			</div>
-		</div>
+
 	</footer>
 	<script type="text/javascript" src="js/spa/route.js"></script>
 	<script type="text/javascript" src="js/spa/router.js"></script>
