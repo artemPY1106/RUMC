@@ -2,5 +2,10 @@
     .events-wrapper {
         width: 100%;
         margin-left: 0px;
+
+    }
+
+    .events-wrapper .other-pages-tittle {
+        margin-left: 30%;
     }
 }
