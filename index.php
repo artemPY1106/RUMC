@@ -19,6 +19,8 @@
 	<link rel="stylesheet" type="text/css" href="styles/education.css">
 	<link rel="stylesheet" type="text/css" href="styles/careerGuidance.css">
 	<link rel="stylesheet" type="text/css" href="styles/footer.css">
+	<link rel="stylesheet" type="text/css" href="styles/media/mediaEvents.css">
+	<link rel="stylesheet" type="text/css" href="styles/media/mediaCareerguidance.css">
 	<link rel="stylesheet" type="text/css" href="styles/media/mediaFileviewer.css">
 	<link rel="stylesheet" type="text/css" href="styles/media/mediaHomepage.css">
 	<link rel="stylesheet" type="text/css" href="styles/media/mediaNav.css">

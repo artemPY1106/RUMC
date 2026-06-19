@@ -1,0 +1,12 @@
+@media (max-width: 860px) { 
+    .article p {
+        margin-left: 0px;
+        font-size: 3vw;
+    }
+    
+    .article p span {
+        font-weight: 800;
+        font-size: 3.5vw;
+        color: #2fabd4;
+    }
+}
