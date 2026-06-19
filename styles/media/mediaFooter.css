@@ -1,75 +1,78 @@
-@media (max-width: 860px) {
-    footer {
-        padding: 40px 40px 20px 40px;
-    }
+@media (max-width: 1000px) {
+  footer > div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
 
-    footer > div {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-    }
+@media (max-width: 860px) {
+  footer {
+    padding: 40px 40px 20px 40px;
+    margin-left: 40px;
+  }
 }
 
 @media (max-width: 768px) {
-    footer {
-        padding: 30px 20px 20px 20px;
-    }
+  footer {
+    padding: 30px 20px 20px 20px;
+  }
 
-    footer > div {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
+  footer > div {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 
-    footer > div > div {
-        padding: 20px 25px;
-    }
+  footer > div > div {
+    padding: 20px 25px;
+  }
 
-    footer p {
-        font-size: 14px;
-    }
+  footer p {
+    font-size: 14px;
+  }
 
-    footer > div > div:nth-child(5) p:first-child {
-        font-size: 18px;
-    }
+  footer > div > div:nth-child(5) p:first-child {
+    font-size: 18px;
+  }
 
-    footer > div > div:nth-child(2) p {
-        font-size: 16px;
-    }
+  footer > div > div:nth-child(2) p {
+    font-size: 16px;
+  }
 
-    footer > div > div:nth-child(4) p:last-child {
-        font-size: 16px;
-    }
+  footer > div > div:nth-child(4) p:last-child {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 480px) {
-    footer {
-        padding: 20px 15px 15px 15px;
-        min-height: auto;
-    }
+  footer {
+    padding: 20px 15px 15px 15px;
+    min-height: auto;
+  }
 
-    footer > div > div {
-        padding: 15px 18px;
-    }
+  footer > div > div {
+    padding: 15px 18px;
+  }
 
-    footer p {
-        font-size: 13px;
-        line-height: 1.5;
-    }
+  footer p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
 
-    footer > div > div:nth-child(5) p:first-child {
-        font-size: 16px;
-    }
+  footer > div > div:nth-child(5) p:first-child {
+    font-size: 16px;
+  }
 
-    footer > div > div:nth-child(2) p {
-        font-size: 14px;
-        padding: 8px;
-    }
+  footer > div > div:nth-child(2) p {
+    font-size: 14px;
+    padding: 8px;
+  }
 
-    footer > div > div:nth-child(4) p:last-child {
-        font-size: 14px;
-        padding: 8px;
-    }
+  footer > div > div:nth-child(4) p:last-child {
+    font-size: 14px;
+    padding: 8px;
+  }
 
-    footer > div > div:nth-child(6) p span {
-        font-size: 14px;
-    }
+  footer > div > div:nth-child(6) p span {
+    font-size: 14px;
+  }
 }
