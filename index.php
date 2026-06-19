@@ -12,7 +12,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha512-HaoDYc3PGduguBWOSToNc0AWGHBi2Y432Ssp3wNIdlOzrunCtB2qq6FrhtPbo+PlbvRbyi86dr5VQx61eg/daQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<link rel="stylesheet" type="text/css" href="styles/origin.css">
 	<link rel="stylesheet" type="text/css" href="styles/header.css">
-	<link rel="stylesheet" type="text/css" href="styles/media/mediaHomepage.css">
 	<link rel="stylesheet" type="text/css" href="styles/homepage.css">
 	<link rel="stylesheet" type="text/css" href="styles/fileviewer.css">
 	<link rel="stylesheet" type="text/css" href="styles/events.css">
@@ -20,6 +19,8 @@
 	<link rel="stylesheet" type="text/css" href="styles/education.css">
 	<link rel="stylesheet" type="text/css" href="styles/careerGuidance.css">
 	<link rel="stylesheet" type="text/css" href="styles/footer.css">
+	<link rel="stylesheet" type="text/css" href="styles/media/mediaFileviewer.css">
+	<link rel="stylesheet" type="text/css" href="styles/media/mediaHomepage.css">
 	<link rel="stylesheet" type="text/css" href="styles/media/mediaNav.css">
 	<link rel="stylesheet" type="text/css" href="styles/media/mediaFirstWrapper.css">
 	<link rel="stylesheet" type="text/css" href="styles/media/mediaMap.css">

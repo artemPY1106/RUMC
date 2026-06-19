@@ -1,0 +1,18 @@
+@media (max-width: 860px) {
+    .fileview-wrapper {
+        position: relative;
+        width: 100%;
+        margin-left: 0px;
+        margin: 0 auto;
+        min-height: 100vh;
+        row-gap: 50px;
+    }
+
+    .wrapper-courses .first-word {
+        font-size: 5vw;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+

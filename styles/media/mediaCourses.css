@@ -1,10 +1,27 @@
 @media (max-width: 1080px) {
+
+  .wrapper-courses .first-word {
+    font-size: 7vw;
+  }
+
   .list-courses {
     row-gap: 24px;
   }
 }
 
 @media (max-width: 860px) {
+
+  .wrapper-courses {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .wrapper-courses .first-word {
+    font-size: 5vw;
+
+    text-align: center;
+  }
+
   .courses-wrapper {
     width: 100%;
     margin: 0;
@@ -33,6 +50,10 @@
 
 /* Планшеты (768px - 1024px) */
 @media screen and (max-width: 1024px) {
+  .courses-btn {
+    font-size: 3vw;
+  }
+
   .list-courses {
     gap: 20px;
   }
@@ -98,6 +119,7 @@
     height: 50px;
     margin-top: 15px;
   }
+
 }
 
 /* Маленькие мобильные (320px - 480px) */

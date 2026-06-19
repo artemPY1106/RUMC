@@ -1,7 +1,5 @@
 @media screen and (max-width: 1024px) {
-  .other-pages-tittle {
-    margin-left: 4vw;
-  }
+ 
 
   .other-pages-tittle i {
     font-size: 4vw;
@@ -12,14 +10,6 @@
 @media (max-width: 860px) {
   .other-pages-tittle {
     margin: 0 auto;
-  }
-  .fileview-wrapper {
-    position: relative;
-    width: 100%;
-    margin-left: 0px;
-    margin: 0 auto;
-    min-height: 100vh;
-    row-gap: 50px;
   }
 }
 
