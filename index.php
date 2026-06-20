@@ -18,6 +18,8 @@
 	<link rel="stylesheet" type="text/css" href="styles/courses.css">
 	<link rel="stylesheet" type="text/css" href="styles/education.css">
 	<link rel="stylesheet" type="text/css" href="styles/careerGuidance.css">
+	<link rel="stylesheet" type="text/css" href="styles/partners.css">
+	<link rel="stylesheet" type="text/css" href="styles/accessibleEnvironment.css">
 	<link rel="stylesheet" type="text/css" href="styles/footer.css">
 	<link rel="stylesheet" type="text/css" href="styles/media/mediaFooter.css">
 	<link rel="stylesheet" type="text/css" href="styles/media/mediaEvents.css">

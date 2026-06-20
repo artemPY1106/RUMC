@@ -10,7 +10,7 @@
 			$catalog->execute();
 			foreach ($catalog as $row) {
 				$folder = '../documents/'.$row['globalCatalog'].'/'.$row['nameCatalog'].'';
-				$folderLink = 'documents/'.$row['globalCatalog'].'/'.$row['nameCatalog'].'/';
+				$folderLink = '../documents/'.$row['globalCatalog'].'/'.$row['nameCatalog'].'/';
 				if ($dh = opendir($folder)) {
 					echo '
 						<div class="filestorage-wrapper">
