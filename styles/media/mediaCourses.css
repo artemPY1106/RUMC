@@ -1,5 +1,4 @@
 @media (max-width: 1080px) {
-
   .wrapper-courses .first-word {
     font-size: 7vw;
   }
@@ -10,7 +9,6 @@
 }
 
 @media (max-width: 860px) {
-
   .wrapper-courses {
     width: 100%;
     margin-left: 0px;
