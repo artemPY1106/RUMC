@@ -18,8 +18,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha512-HaoDYc3PGduguBWOSToNc0AWGHBi2Y432Ssp3wNIdlOzrunCtB2qq6FrhtPbo+PlbvRbyi86dr5VQx61eg/daQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<link rel="stylesheet" type="text/css" href="styles/origin.css">
 	<link rel="stylesheet" type="text/css" href="styles/header.css">
-	<link rel="stylesheet" type="text/css" href="styles/homepage.css">
 	<link rel="stylesheet" type="text/css" href="styles/course.css">
+	<link rel="stylesheet" type="text/css" href="styles/media/mediaCourses.css">
+	<link rel="stylesheet" type="text/css" href="styles/homepage.css">
 	<!-- <script>
 		( function ( d ) {
 			var s=d.createElement("script");

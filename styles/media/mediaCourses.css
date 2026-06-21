@@ -121,6 +121,21 @@
   .min-info h1 {
     font-size: 4vw;
   }
+
+  .course-wrapper h1 {
+    font-size: 5vw;
+  }
+
+  .course-wrapper p:last-of-type {
+    font-size: 5vw;
+  }
+
+  .course-wrapper a {
+    text-align: center;
+    padding: 4vw 6vw;
+    font-size: 4vw;
+    margin-top: 6vw;
+  }
 }
 
 /* Маленькие мобильные (320px - 480px) */
