@@ -12,9 +12,6 @@ $partners = $conn->query('SELECT * FROM `partners` ORDER BY CAST(`num` AS UNSIGN
 		<h2 class="partners-header">Региональные органы исполнительной власти</h2>
 		<div class="regional-authorities-wrapper">
 			<a href="https://xn--42-6kcadhwnl3cfdx.xn--p1ai/" target="_blank" class="authority-card">
-				<div class="authority-logo">
-					<img src="images/gerb-kuzbass.png" alt="Герб Кузбасса">
-				</div>
 				<div class="authority-name">
 					<p>Министерство образования Кузбасса</p>
 				</div>
@@ -27,7 +24,6 @@ $partners = $conn->query('SELECT * FROM `partners` ORDER BY CAST(`num` AS UNSIGN
 		</div>
 	</div>
 
-	<!-- Образовательные организации -->
 	<div class="partners-section">
 		<h2 class="partners-header">Образовательные организации, включенные в сетевое взаимодействие</h2>
 		
@@ -59,8 +55,7 @@ $partners = $conn->query('SELECT * FROM `partners` ORDER BY CAST(`num` AS UNSIGN
 			</div>
 			<?php endwhile; ?>
 		</div>
-
-		<!-- Файловый менеджер с соглашениями -->
+		
 		<div class="filemanger-wrapper">
 			<?php
 				$nameGlobalCatalog = 'docsPart';

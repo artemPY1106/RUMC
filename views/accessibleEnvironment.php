@@ -1,7 +1,6 @@
 <div class="fileview-wrapper">
 	<p class="other-pages-tittle first-word">ДОСТУПНАЯ СРЕДА <i class="fa-solid fa-universal-access"></i></p>
 	
-	<!-- Адреса объектов -->
 	<div class="accessible-section">
 		<h2 class="accessible-header">
 			<i class="fa-solid fa-location-dot"></i>
@@ -67,7 +66,6 @@
 		</div>
 	</div>
 
-	<!-- Способы предоставления услуг -->
 	<div class="accessible-section">
 		<h2 class="accessible-header">
 			<i class="fa-solid fa-hand-holding-heart"></i>
@@ -111,7 +109,6 @@
 		</div>
 	</div>
 
-	<!-- Автостоянка -->
 	<div class="accessible-section">
 		<h2 class="accessible-header">
 			<i class="fa-solid fa-square-parking"></i>
@@ -135,5 +132,113 @@
 				</div>
 			</div>
 		</div>
+	</div>
+
+<div class="accessible-folders-section">
+    <h2 class="accessible-header">
+        <i class="fa-solid fa-folder-tree"></i>
+        Дополнительная информация
+    </h2>
+
+    <div class="accordion-wrapper">
+        <?php
+        require_once('../php/connectdb.php');
+
+        $nameGlobalCatalog = 'docsAccessible';
+
+        $catalog = $conn->prepare("SELECT `nameCatalog`, `globalCatalog` FROM `catalogs` WHERE `globalCatalog` = '$nameGlobalCatalog' ORDER BY `idCatalog` ASC");
+        $catalog->execute();
+        
+        $firstItem = true;
+        foreach ($catalog as $row) {
+            $folderName = $row['nameCatalog'];
+            $folder = '../documents/'.$row['globalCatalog'].'/'.$folderName;
+            $folderLink = 'documents/'.$row['globalCatalog'].'/'.rawurlencode($folderName).'/';
+            
+            $isActive = $firstItem ? 'active' : '';
+            $iconClass = $firstItem ? 'fa-minus' : 'fa-plus';
+            $firstItem = false;
+
+            $isLinksFolder = (strpos($row['nameCatalog'], 'Сайты дистанционных') !== false);
+            ?>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <i class="fa-solid <?php echo $iconClass; ?> accordion-icon"></i>
+                    <span><?php echo htmlspecialchars($row['nameCatalog']); ?></span>
+                </div>
+                <div class="accordion-content <?php echo $isActive; ?>">
+                    <div class="accordion-body">
+                        <?php if ($isLinksFolder): ?>
+                            <!-- Ссылки для папки "Сайты дистанционных образовательных технологий" -->
+                            <div class="links-list">
+                                <a href="https://znanium.com" target="_blank" class="link-item">
+                                    <i class="fa-solid fa-book"></i>
+                                    <span>Электронно-библиотечная система Znanium</span>
+                                </a>
+                                <a href="https://urait.ru" target="_blank" class="link-item">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                    <span>Образовательная платформа «Юрайт» — курсы и учебники СПО, по различным дисциплинам</span>
+                                </a>
+                                <a href="https://reestr-pd.minpromtorg.gov.ru" target="_blank" class="link-item">
+                                    <i class="fa-solid fa-wheelchair-move"></i>
+                                    <span>Каталог товаров реабилитационной направленности, верифицированных Минпромторгом России</span>
+                                </a>
+                                <a href="#" target="_blank" class="link-item">
+                                    <i class="fa-solid fa-hands-asl-interpreting"></i>
+                                    <span>Диспетчерский центр перевода РЖЯ</span>
+                                </a>
+                            </div>
+                        <?php else: ?>
+                            <?php
+                            $absolutePath = realpath($folder);
+                            
+                            if ($absolutePath && is_dir($absolutePath)) {
+                                $files = array_diff(scandir($absolutePath), array('.', '..'));
+                                
+                                if (!empty($files)) {
+                                    echo '<div class="filestorage-grid">';
+                                    foreach ($files as $file) {
+                                        $filePath = $absolutePath . '/' . $file;
+                                        $fileExt = strtolower(pathinfo($file, PATHINFO_EXTENSION));
+                                        $fileIcon = 'fa-file';
+                                        if ($fileExt == 'pdf') $fileIcon = 'fa-file-pdf';
+                                        else if ($fileExt == 'doc' || $fileExt == 'docx') $fileIcon = 'fa-file-word';
+                                        else if ($fileExt == 'xls' || $fileExt == 'xlsx') $fileIcon = 'fa-file-excel';
+                                        else if ($fileExt == 'jpg' || $fileExt == 'jpeg' || $fileExt == 'png') $fileIcon = 'fa-file-image';
+                                        
+                                        $encodedFile = rawurlencode($file);
+                                        
+                                        echo '
+                                            <div class="file-item">
+                                                <a href="'.$folderLink.$encodedFile.'" target="_blank">
+                                                    <i class="fa-solid '.$fileIcon.'"></i>
+                                                    <span>'.htmlspecialchars($file).'</span>
+                                                </a>
+                                            </div>';
+                                    }
+                                    echo '</div>';
+                                } else {
+                                    echo '<p class="no-files"><i class="fa-solid fa-folder-open"></i> Папка пуста</p>';
+                                }
+                            } else {
+                                // Отладочная информация
+                                echo '<div style="background: #fff3cd; padding: 15px; border-radius: 5px; margin: 10px 0;">';
+                                echo '<p style="color: #856404; margin: 0;"><strong>⚠️ Папка не найдена</strong></p>';
+                                echo '<p style="color: #856404; margin: 5px 0 0 0; font-size: 12px;">';
+                                echo 'Путь: <code>'.htmlspecialchars($folder).'</code><br>';
+                                echo 'Absolute path: <code>'.htmlspecialchars($absolutePath ?: 'не определен').'</code>';
+                                echo '</p>';
+                                echo '</div>';
+                            }
+                            ?>
+                        <?php endif; ?>
+                    </div>
+                </div>
+            </div>
+            <?php
+        }
+        ?>
+    </div>
+	</div>
 	</div>
 </div>

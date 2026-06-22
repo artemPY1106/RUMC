@@ -368,6 +368,7 @@
 	<script type="text/javascript" src="js/ajax/categoryEvents.js"></script>
 	<script type="text/javascript" src="js/plugins/jquery.spincrement.js"></script>
 	<script type="text/javascript" src="js/plugins/jquery.spincrement.min.js"></script>
+	<script type="text/javascript" src="js/accordion.js"></script> 
 	<script type="text/javascript" src="js/media.js"></script>
 	<script>
 		let observer = new MutationObserver(mutationRecords => {
