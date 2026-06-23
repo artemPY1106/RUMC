@@ -176,6 +176,9 @@
 			}
 		?>
 		<div class="filestorage-wrapper">
+			<div class="linkstorage-tittle">
+				<p>Сайты дистанционных образовательных технологий</p>
+			</div>
 			<div class="filestorage-link">
 				<div class="link">
 					<a href="https://znanium.com/" title="Электронно-библиотечная система Znanium" target="_blanc">

@@ -611,7 +611,6 @@
 	padding: 25px;
 }
 
-/* Сетка файлов */
 .filestorage-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -651,7 +650,6 @@
 	word-break: break-word;
 }
 
-/* Список ссылок */
 .links-list {
 	display: flex;
 	flex-direction: column;

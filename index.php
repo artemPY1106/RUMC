@@ -357,19 +357,16 @@
 					<div class="form-group">
 						<label for="userName">Ваше имя</label>
 						<input type="text" id="userName" name="name" placeholder="Введите ваше имя" required>
-						<i class="fa-solid fa-user input-icon"></i>
 					</div>
 					
 					<div class="form-group">
 						<label for="userEmail">Email</label>
 						<input type="email" id="userEmail" name="email" placeholder="Введите ваш email" required>
-						<i class="fa-solid fa-envelope input-icon"></i>
 					</div>
 					
 					<div class="form-group form-group-full">
 						<label for="userMessage">Сообщение</label>
 						<textarea id="userMessage" name="message" placeholder="Введите ваше сообщение" rows="4" required></textarea>
-						<i class="fa-solid fa-comment-dots input-icon-textarea"></i>
 					</div>
 					
 					<button type="submit" class="submit-btn" id="submitBtn">
