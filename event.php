@@ -22,9 +22,13 @@
 	<script src="https://kit.fontawesome.com/ce798340d9.js" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha512-HaoDYc3PGduguBWOSToNc0AWGHBi2Y432Ssp3wNIdlOzrunCtB2qq6FrhtPbo+PlbvRbyi86dr5VQx61eg/daQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<link rel="stylesheet" type="text/css" href="styles/origin.css">
+	<link rel="stylesheet" type="text/css" href="styles/footer.css">
 	<link rel="stylesheet" type="text/css" href="styles/header.css">
 	<link rel="stylesheet" type="text/css" href="styles/homepage.css">
 	<link rel="stylesheet" type="text/css" href="styles/event.css">
+	<link rel="stylesheet" type="text/css" href="styles/media/mediaEvent.css">
+	<link rel="stylesheet" type="text/css" href="styles/media/mediaFooter.css">	
+	<link rel="stylesheet" type="text/css" href="styles/media/mediaNav.css">
 	<!-- <script>
 		( function ( d ) {
 			var s=d.createElement("script");
@@ -164,5 +168,6 @@
 	<script type="text/javascript" src="js/spa/router.js"></script>
 	<script type="text/javascript" src="js/spa/app.js"></script>
 	<script type="text/javascript" src="js/navigate.js"></script>
-	<script type="text/javascript" src="js/animpage.js"></script>
+	<script type="text/javascript" src="js/animpage.js"></script>	
+	<script type="text/javascript" src="js/media.js"></script>
 </html>
