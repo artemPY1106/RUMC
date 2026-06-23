@@ -660,7 +660,7 @@
 
 .link-item {
 	display: flex;
-	align-items: center;
+	align-items: start;
 	gap: 15px;
 	padding: 18px 20px;
 	background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(245,246,248,1) 100%);
@@ -683,8 +683,8 @@
 	width: 40px;
 	height: 40px;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	align-items: start;
+	justify-content: start;
 	background: linear-gradient(135deg, rgba(47,171,212,0.1) 0%, rgba(255,53,115,0.1) 100%);
 	border-radius: 8px;
 }
@@ -695,7 +695,6 @@
 	flex: 1;
 }
 
-/* Сообщение об отсутствии файлов */
 .no-files {
 	text-align: center;
 	padding: 40px 20px;
@@ -703,7 +702,6 @@
 	font-size: 16px;
 }
 
-/* Адаптивность */
 @media (max-width: 768px) {
 	.accessible-folders-section {
 		padding: 0 20px;

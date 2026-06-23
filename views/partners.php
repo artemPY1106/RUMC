@@ -57,49 +57,41 @@ $partners = $conn->query('SELECT * FROM `partners` ORDER BY CAST(`num` AS UNSIGN
 		</div>
 		
 		<div class="filemanger-wrapper">
-			<?php
-				$nameGlobalCatalog = 'docsPart';
-				$nameCatalog = 'Соглашения';
+		<?php
+			require_once('../php/connectdb.php');
 
-				$catalog = $conn->prepare("SELECT `nameCatalog`, `globalCatalog` FROM `catalogs` WHERE `globalCatalog` = '$nameGlobalCatalog' AND `nameCatalog` = '$nameCatalog' ORDER BY `idCatalog` DESC");
-				$catalog->execute();
-				foreach ($catalog as $row) {
-					$folder = '../documents/'.$row['globalCatalog'].'/'.$row['nameCatalog'];
-					$folderLink = '../documents/'.$row['globalCatalog'].'/'.$row['nameCatalog'].'/';
-					if ($dh = opendir($folder)) {
-						echo '
-							<div class="filestorage-wrapper">
-								<div class="filestorage-tittle">
-									<i class="fa-solid fa-folder-open"></i>
-									<p>'.$row['nameCatalog'].'</p>
-								</div>
-								<div class="filestorage">';
-									while (($file = readdir($dh)) !== false) {
-										if ($file != '.' && $file != '..') {
-											$fileExt = strtolower(pathinfo($file, PATHINFO_EXTENSION));
-											$fileIcon = 'fa-file';
-											if ($fileExt == 'pdf') {
-												$fileIcon = 'fa-file-pdf';
-											} else if ($fileExt == 'doc' || $fileExt == 'docx') {
-												$fileIcon = 'fa-file-word';
-											}
-											
-											echo '
-												<div class="file">
-													<a href="'.$folderLink.$file.'" title="'.$file.'" target="_blank">
-														<i class="fa-solid '.$fileIcon.'"></i>
-														<p class="name-file">'.$file.'</p>
-													</a>
-												</div>';
-										}
-									}    
-						echo'        </div>
+			$nameGlobalCatalog = 'docsPart';
+
+			$catalog = $conn->prepare("SELECT `nameCatalog`, `globalCatalog` FROM `catalogs` WHERE `globalCatalog` = '$nameGlobalCatalog' ORDER BY `idCatalog` DESC");
+			$catalog->execute();
+			foreach ($catalog as $row) {
+				$folder = '../documents/'.$row['globalCatalog'].'/'.$row['nameCatalog'].'';
+				$folderLink = 'documents/'.$row['globalCatalog'].'/'.$row['nameCatalog'].'/';
+				if ($dh = opendir($folder)) {
+					echo '
+						<div class="filestorage-wrapper">
+							<div class="filestorage-tittle">
+								<p>'.$row['nameCatalog'].'</p>
 							</div>
-						';
-					closedir($dh);
-					}
+							<div class="filestorage">';
+								while (($file = readdir($dh)) !== false) {
+									if ($file != '.' && $file != '..') {
+										echo '
+											<div class="file">
+												<a href="'.$folderLink.$file.'" title="'.$file.'" target="_blanc">
+													<i class="fa-solid fa-file"></i>
+													<p class="name-file">'.$file.'</p>
+												</a>
+											</div>';
+									}
+								}    
+					echo'        </div>
+						</div>
+					';
+				closedir($dh);
 				}
-			?>
-		</div>
+			}
+		?>
+	</div>
 	</div>
 </div>
