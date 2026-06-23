@@ -1,7 +1,8 @@
 @media (max-width: 860px) { 
     .article p {
         margin-left: 0px;
-        font-size: 3vw;
+        font-size: 3vw; 
+        padding: 2vw;
     }
     
     .article p span {

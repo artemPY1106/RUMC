@@ -1,78 +1,105 @@
-@media (max-width: 1000px) {
-  footer > div {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-  }
-}
-
 @media (max-width: 860px) {
   footer {
-    padding: 40px 40px 20px 40px;
-    margin-left: 0px;
-  }
-}
-
-@media (max-width: 768px) {
-  footer {
-    padding: 30px 20px 20px 20px;
+    padding: 30px 40px;
+    width: 100%;
+    margin-left: 0;
+    margin: 0 auto;
+    margin-bottom: 80px;
   }
 
-  footer > div {
+  .row1-foot {
     grid-template-columns: 1fr;
     gap: 20px;
   }
 
-  footer > div > div {
-    padding: 20px 25px;
+  .number-foot {
+    grid-column: span 1;
   }
 
-  footer p {
-    font-size: 14px;
+  .contact-form-wrapper {
+    width: 100%;
+    padding: 30px;
   }
 
-  footer > div > div:nth-child(5) p:first-child {
+  .row1-foot > div:nth-child(6) {
+    grid-column: span 1;
+  }
+
+  .row2-foot {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns:1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  footer {
+    padding: 30px 40px;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 25px 20px;
+  }
+  
+  .row1-foot {
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .row1-foot > .text-foot:first-child {
+    grid-column: 1 / -1;
+  }
+  
+  .number-foot p {
+    font-size: 16px;
+  }
+  
+  .row1-foot > div:nth-child(5) p:first-child {
     font-size: 18px;
   }
-
-  footer > div > div:nth-child(2) p {
-    font-size: 16px;
+  
+  .row2-foot {
+    gap: 15px;
   }
-
-  footer > div > div:nth-child(4) p:last-child {
-    font-size: 16px;
+  
+  .row2-foot > div {
+    padding: 20px;
+  }
+  
+  .row2-foot > div span {
+    font-size: 15px;
+  }
+  
+  .row2-foot > div p {
+    font-size: 13px;
   }
 }
 
 @media (max-width: 480px) {
   footer {
-    padding: 20px 15px 15px 15px;
-    min-height: auto;
+    padding: 20px 15px;
   }
-
-  footer > div > div {
-    padding: 15px 18px;
+  
+  .row1-foot > .text-foot:first-child {
+    grid-column: 1 / -1;
   }
-
-  footer p {
-    font-size: 13px;
-    line-height: 1.5;
+  
+  .number-foot p {
+    font-size: 15px;
   }
-
-  footer > div > div:nth-child(5) p:first-child {
+  
+  .row1-foot > div:nth-child(5) p:first-child {
     font-size: 16px;
   }
-
-  footer > div > div:nth-child(2) p {
+  
+  .row2-foot > div span {
     font-size: 14px;
-    padding: 8px;
   }
-
-  footer > div > div:nth-child(4) p:last-child {
-    font-size: 14px;
-    padding: 8px;
-  }
-
-  footer > div > div:nth-child(6) p span {
-    font-size: 14px;
+  
+  .row2-foot > div p {
+    font-size: 12px;
   }
 }

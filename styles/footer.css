@@ -1,18 +1,19 @@
 footer {
   position: relative;
   z-index: 0;
-  width: 96%;
+  width: calc(100% - 80px);
+  margin-left: 80px;
   background: #ffffff;
   padding: 40px 60px;
   box-sizing: border-box;
   color: #333333;
-  margin-left: 60px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   border-top: 3px solid #1ac6ff;
 }
 
 .row1-foot {
   display: grid;
+  justify-content: center;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   margin-bottom: 40px;
@@ -318,92 +319,3 @@ footer {
   letter-spacing: 0.5px;
 }
 
-@media (max-width: 1024px) {
-  footer {
-    padding: 30px 40px;
-  }
-  
-  .row1-foot {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  
-  .row1-foot > .text-foot:first-child {
-    grid-column: 1 / -1;
-  }
-  
-  .number-foot,
-  .row1-foot > div:nth-child(5) {
-    grid-column: span 1;
-  }
-  
-  .row2-foot {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  footer {
-    padding: 25px 20px;
-  }
-  
-  .row1-foot {
-    gap: 15px;
-    margin-bottom: 30px;
-  }
-  
-  .row1-foot > .text-foot:first-child {
-    grid-column: 1 / -1;
-  }
-  
-  .number-foot p {
-    font-size: 16px;
-  }
-  
-  .row1-foot > div:nth-child(5) p:first-child {
-    font-size: 18px;
-  }
-  
-  .row2-foot {
-    gap: 15px;
-  }
-  
-  .row2-foot > div {
-    padding: 20px;
-  }
-  
-  .row2-foot > div span {
-    font-size: 15px;
-  }
-  
-  .row2-foot > div p {
-    font-size: 13px;
-  }
-}
-
-@media (max-width: 480px) {
-  footer {
-    padding: 20px 15px;
-  }
-  
-  .row1-foot > .text-foot:first-child {
-    grid-column: 1 / -1;
-  }
-  
-  .number-foot p {
-    font-size: 15px;
-  }
-  
-  .row1-foot > div:nth-child(5) p:first-child {
-    font-size: 16px;
-  }
-  
-  .row2-foot > div span {
-    font-size: 14px;
-  }
-  
-  .row2-foot > div p {
-    font-size: 12px;
-  }
-}
