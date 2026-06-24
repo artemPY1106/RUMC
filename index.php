@@ -18,7 +18,10 @@
 	<link rel="stylesheet" type="text/css" href="styles/courses.css">
 	<link rel="stylesheet" type="text/css" href="styles/education.css">
 	<link rel="stylesheet" type="text/css" href="styles/careerGuidance.css">
+	<link rel="stylesheet" type="text/css" href="styles/partners.css">
+	<link rel="stylesheet" type="text/css" href="styles/accessibleEnvironment.css">
 	<link rel="stylesheet" type="text/css" href="styles/footer.css">
+	<link rel="stylesheet" type="text/css" href="styles/media/mediaEnvironment.css">
 	<link rel="stylesheet" type="text/css" href="styles/media/mediaFooter.css">
 	<link rel="stylesheet" type="text/css" href="styles/media/mediaEvents.css">
 	<link rel="stylesheet" type="text/css" href="styles/media/mediaCareerguidance.css">
@@ -327,30 +330,76 @@
 		</div>
 	</main>
 	<footer>
-		<div>
-			<div>
-				<p>Ресурсным учебно-методическим центром инклюзивного образования  ГПОУ «Профессиональный колледж г. Новокузнецка» имени Кучерявенко Тамары Александровны организована работа постоянно действующей «горячей линии» по вопросам получения профессионального образования и профессионального обучения лиц с инвалидностью и ОВЗ.</p>
+		<div class="row1-foot">
+			<div class="text-foot">
+				<p>Ресурсным учебно-методическим центром инклюзивного образования ГПОУ «Профессиональный колледж г. Новокузнецка» имени Кучерявенко Тамары Александровны организована работа постоянно действующей «горячей линии» по вопросам получения профессионального образования и профессионального обучения лиц с инвалидностью и ОВЗ.</p>
 			</div>
-			<div>
+			
+			<div class="number-foot">
 				<p>Номер телефона горячей линии: +7(950)579 - 74 - 86</p>
 			</div>
-			<div>
-				<p>Консультирование осуществляют специалисты РУМЦ ГПОУ «Профессиональный колледж г. Новокузнецка» имени Кучерявенко Тамары Александровны</p>
+			
+			<div class="text-foot">
+				<p>Консультирование осуществляют специалисты РУМЦ ГПОУ «Профессиональный колледж г. Новокузнецка» имени Кучерявенко Тамары Александровны</p>
 			</div>
+			
 			<div>
-				<p>Ответственный за работу «горячей линии»:  Барышева Анжелика Виикторовна, руководитель РУМЦ</p>
-				<p>e-mail: rumc@pkgn.ru</p>
+				<p><strong>Ответственный за работу «горячей линии»:</strong><br>
+				Барышева Анжелика Виикторовна, руководитель РУМЦ</p>
+				<p>e-mail: <a href="mailto:rumc@pkgn.ru" style="color: #1ac6ff; text-decoration: none;">rumc@pkgn.ru</a></p>
 			</div>
+
+			<div class="contact-form-wrapper">
+				<h2 class="form-title">Получить персонального консультанта</h2>
+				<p class="form-subtitle">Оставьте свои контактные данные и с Вами свяжется специалист</p>
+				
+				<form class="contact-form" id="consultantForm" novalidate>
+					<div class="form-group">
+						<label for="userName">Ваше имя</label>
+						<input type="text" id="userName" name="name" placeholder="Введите ваше имя" required>
+					</div>
+					
+					<div class="form-group">
+						<label for="userEmail">Email</label>
+						<input type="email" id="userEmail" name="email" placeholder="Введите ваш email" required>
+					</div>
+					
+					<div class="form-group form-group-full">
+						<label for="userMessage">Сообщение</label>
+						<textarea id="userMessage" name="message" placeholder="Введите ваше сообщение" rows="4" required></textarea>
+					</div>
+					
+					<button type="submit" class="submit-btn" id="submitBtn">
+						<span>Отправить</span>
+						<i class="fa-solid fa-paper-plane"></i>
+					</button>
+					
+					<div class="form-message" id="formMessage"></div>
+				</form>
+			</div>
+			
 			<div>
-				<p>ВАШ ПЕРСОНАЛЬНЫЙ КОНСУЛЬТАНТ</p>
+				<p><strong>ВАШ ПЕРСОНАЛЬНЫЙ КОНСУЛЬТАНТ</strong></p>
 				<p>Готов оказывать содействие на всем пути выбора образовательной организации, направления подготовки</p>
 			</div>
+		</div>
+		
+		<div class="row2-foot">
 			<div>
-				<p><span>ВОЗМОЖНОСТИ ДЛЯ АБИТУРИЕНТОВ И РОДИТЕЛЕЙ</span><br>
-				- Получение индивидуальных консультаций<br>
+				<span>ВАШ ПЕРСОНАЛЬНЫЙ КОНСУЛЬТАНТ</span>
+				<p>Персональный консультант поможет вам на всех этапах поступления и обучения. Вы получите индивидуальную поддержку и ответы на все вопросы.</p>
+			</div>
+			
+			<div>
+				<span>ВОЗМОЖНОСТИ ДЛЯ АБИТУРИЕНТОВ И РОДИТЕЛЕЙ</span>
+				<p>- Получение индивидуальных консультаций<br>
 				- Консультация в подготовке полного пакета документов для зачисления<br>
-				<span>КАК ПОЛУЧИТЬ ПЕРСОНАЛЬНОГО КОНСУЛЬТАНТА?</span><br>
-				Оставьте Ваши контактные данные в выплывающей плашке, расположенной слева экрана и с Вами свяжется специалист.</p>
+				- Сопровождение на всех этапах поступления</p>
+			</div>
+			
+			<div>
+				<span>КАК ПОЛУЧИТЬ ПЕРСОНАЛЬНОГО КОНСУЛЬТАНТА?</span>
+				<p>Оставьте Ваши контактные данные в выплывающей плашке, расположенной слева экрана и с Вами свяжется специалист.</p>
 			</div>
 		</div>
 	</footer>
@@ -365,6 +414,7 @@
 	<script type="text/javascript" src="js/ajax/categoryEvents.js"></script>
 	<script type="text/javascript" src="js/plugins/jquery.spincrement.js"></script>
 	<script type="text/javascript" src="js/plugins/jquery.spincrement.min.js"></script>
+	<script src="js/ajax/sendForm.js"></script>
 	<script type="text/javascript" src="js/media.js"></script>
 	<script>
 		let observer = new MutationObserver(mutationRecords => {

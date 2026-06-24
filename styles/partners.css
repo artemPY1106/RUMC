@@ -1,0 +1,258 @@
+.partners-section {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.partners-header {
+  font-size: 42px;
+  font-weight: 800;
+  color: #2fabd4;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  padding-left: 50px;
+}
+
+.regional-authorities-wrapper {
+  display: flex;
+  gap: 30px;
+  padding: 0 50px;
+  flex-wrap: wrap;
+}
+
+.authority-card {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(245, 246, 248, 1) 100%
+  );
+  border-radius: 15px;
+  padding: 40px;
+  text-decoration: none;
+  color: #000;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border: 2px solid transparent;
+}
+
+.authority-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(47, 171, 212, 0.3);
+  border-color: #2fabd4;
+}
+
+.authority-logo {
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.authority-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.authority-name p {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.organizations-list {
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.organization-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 25px 30px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-left: 4px solid #2fabd4;
+}
+
+.organization-card:hover {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 20px rgba(47, 171, 212, 0.2);
+  transform: translateX(5px);
+}
+
+.org-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.org-number {
+  background: linear-gradient(135deg, #ff3573 0%, #1ac6ff 100%);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.org-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  flex: 1;
+}
+
+.org-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 12px;
+  padding-left: 55px;
+}
+
+.org-info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  color: #555;
+}
+
+.org-info-item i {
+  color: #2fabd4;
+  font-size: 16px;
+  width: 20px;
+}
+
+.org-info-item a {
+  color: #2fabd4;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.org-info-item a:hover {
+  color: #ff3573;
+  text-decoration: underline;
+}
+
+.agreements-folder {
+  margin-top: 50px;
+  padding: 30px 50px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(245, 246, 248, 1) 100%
+  );
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.folder-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2fabd4;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.folder-title i {
+  font-size: 32px;
+}
+
+.documents-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.document-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 25px;
+  background-color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease;
+  border: 1px solid #e0e0e0;
+}
+
+.document-item:hover {
+  background-color: #ecfaff;
+  border-color: #2fabd4;
+  transform: translateX(10px);
+  box-shadow: 0 3px 15px rgba(47, 171, 212, 0.2);
+}
+
+.document-item i {
+  font-size: 28px;
+  color: #ff3573;
+}
+
+.document-item span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .partners-header {
+    font-size: 28px;
+    padding-left: 20px;
+  }
+
+  .regional-authorities-wrapper {
+    padding: 0 20px;
+    flex-direction: column;
+  }
+
+  .authority-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .authority-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .authority-name p {
+    font-size: 18px;
+  }
+
+  .organizations-list {
+    padding: 0 20px;
+  }
+
+  .org-info {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+  }
+
+  .agreements-folder {
+    padding: 20px;
+  }
+
+  .document-item {
+    padding: 15px;
+  }
+}

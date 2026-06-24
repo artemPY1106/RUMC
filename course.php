@@ -18,8 +18,29 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha512-HaoDYc3PGduguBWOSToNc0AWGHBi2Y432Ssp3wNIdlOzrunCtB2qq6FrhtPbo+PlbvRbyi86dr5VQx61eg/daQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<link rel="stylesheet" type="text/css" href="styles/origin.css">
 	<link rel="stylesheet" type="text/css" href="styles/header.css">
+	<link rel="stylesheet" type="text/css" href="styles/event.css">
 	<link rel="stylesheet" type="text/css" href="styles/homepage.css">
+	<link rel="stylesheet" type="text/css" href="styles/fileviewer.css">
+	<link rel="stylesheet" type="text/css" href="styles/courses.css">
 	<link rel="stylesheet" type="text/css" href="styles/course.css">
+	<link rel="stylesheet" type="text/css" href="styles/education.css">
+	<link rel="stylesheet" type="text/css" href="styles/careerGuidance.css">
+	<link rel="stylesheet" type="text/css" href="styles/partners.css">
+	<link rel="stylesheet" type="text/css" href="styles/accessibleEnvironment.css">
+	<link rel="stylesheet" type="text/css" href="styles/footer.css">
+	<link rel="stylesheet" type="text/css" href="styles/media/mediaEvent.css">
+	<link rel="stylesheet" type="text/css" href="styles/media/mediaEnvironment.css">
+	<link rel="stylesheet" type="text/css" href="styles/media/mediaFooter.css">
+	<link rel="stylesheet" type="text/css" href="styles/media/mediaEvents.css">
+	<link rel="stylesheet" type="text/css" href="styles/media/mediaCareerguidance.css">
+	<link rel="stylesheet" type="text/css" href="styles/media/mediaFileviewer.css">
+	<link rel="stylesheet" type="text/css" href="styles/media/mediaHomepage.css">
+	<link rel="stylesheet" type="text/css" href="styles/media/mediaNav.css">
+	<link rel="stylesheet" type="text/css" href="styles/media/mediaFirstWrapper.css">
+	<link rel="stylesheet" type="text/css" href="styles/media/mediaMap.css">
+	<link rel="stylesheet" type="text/css" href="styles/media/mediaTask.css">
+	<link rel="stylesheet" type="text/css" href="styles/media/mediaConsaling.css">
+	<link rel="stylesheet" type="text/css" href="styles/media/mediaCourses.css">
 	<!-- <script>
 		( function ( d ) {
 			var s=d.createElement("script");
@@ -124,10 +145,29 @@
 				}
 			?>
 </body>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 	<script type="text/javascript" src="js/spa/route.js"></script>
 	<script type="text/javascript" src="js/spa/router.js"></script>
 	<script type="text/javascript" src="js/spa/app.js"></script>
 	<script type="text/javascript" src="js/navigate.js"></script>
 	<script type="text/javascript" src="js/animpage.js"></script>
+	<script type="text/javascript" src="js/paralaxhome.js"></script>
+	<script type="text/javascript" src="js/appearanceAfterConsal.js"></script>
+	<script type="text/javascript" src="js/appearanceEndConsal.js"></script>
+	<script type="text/javascript" src="js/ajax/categoryEvents.js"></script>
+	<script type="text/javascript" src="js/plugins/jquery.spincrement.js"></script>
+	<script type="text/javascript" src="js/plugins/jquery.spincrement.min.js"></script>
+	<script src="js/ajax/sendForm.js"></script>
+	<script type="text/javascript" src="js/media.js"></script>
+	<script>
+		let observer = new MutationObserver(mutationRecords => {
+			bgPropCourse();
+			initButtonsCategory();
+		})
+
+		observer.observe(app, {
+			childList: true,
+			subtree: true,
+			characterDataOldValue: true 
+		});
+	</script>
 </html>

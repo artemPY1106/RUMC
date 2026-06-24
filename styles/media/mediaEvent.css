@@ -1,0 +1,29 @@
+
+@media (max-width: 1000px) {
+}
+
+@media (max-width: 860px) {
+    main {
+	width: auto;
+	height: 100vh;
+	margin-left: 0px;
+    }
+    
+    .event-wrapper {
+        gap: 5vw;
+    }
+
+    .content-event-all {
+        flex-flow: column;
+        gap: 4vw;
+    }
+    
+    .text-event p {
+        font-size: 2.5vw;
+    }
+
+    .tittle-event {
+        font-size: 4vw;
+         padding: 2vw;
+    }
+}

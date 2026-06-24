@@ -1,16 +1,54 @@
+@media (max-width: 1400px) {
+  .filestorage-tittle p {
+    font-size: 1.25vw;
+  }
+}
 @media (max-width: 860px) {
-    .fileview-wrapper {
-        width: 100%;
-        margin-left: 0px;
-        margin: 0 auto;
-	    row-gap: 3vw;
-    }
+  .filestorage-tittle p {
+    font-size: 2.5vw;
+  }
 
-    .wrapper-courses .first-word {
-        font-size: 5vw;
-        margin: 0 auto;
-        text-align: center;
-    }
+  .filestorage-wrapper {
+    width: 100%;
+    padding: 0 2vw;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+
+  .fileview-wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+    margin-left: 0px;
+    margin: 0 auto;
+    row-gap: 3vw;
+  }
+
+  .filemanger-wrapper {
+    gap: 4vw;
+  }
+  
+.filestorage-tittle {
+  width: 50%;
+  right: 2vw;
 }
 
+  .wrapper-courses .first-word {
+    font-size: 5vw;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .filestorage-tittle p {
+    font-size: 3vw;
+  }
+
+  
+.filestorage-tittle {
+  width: 80%;
+}
+
+}
 

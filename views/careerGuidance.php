@@ -40,7 +40,7 @@
 			}
 		?>
 	</div>
-	<div>
+	<!-- <div>
 		<p class="first-word"><span>ТРУДООРИЕНТАЦИЯ</span></p>
-	</div>
+	</div> -->
 </div>

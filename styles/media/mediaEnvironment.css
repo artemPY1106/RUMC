@@ -1,0 +1,87 @@
+@media (max-width: 1024px) {
+  .accessible-header {
+    font-size: 26px;
+    padding-left: 20px;
+  }
+
+  .addresses-table-wrapper {
+    padding: 0 2vw;
+  }
+
+  .info-card {
+    margin: 0 20px;
+    flex-direction: column;
+  }
+
+  .info-card-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .info-card-icon i {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .accessible-header {
+    font-size: 22px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .accessible-header i {
+    font-size: 28px;
+  }
+
+  .addresses-table th,
+  .addresses-table td {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .addresses-table th {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .info-card {
+    padding: 20px;
+  }
+
+  .info-card-content p {
+    font-size: 16px;
+  }
+
+  .call-button-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .phone-link {
+    font-size: 18px !important;
+  }
+
+  .parking-badges {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .addresses-table {
+    font-size: 12px;
+  }
+
+  .building-number {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+
+  .work-hours {
+    font-size: 16px;
+  }
+}
